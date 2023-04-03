@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { FaUser } from "react-icons/fa";
 import logo from "./assets/foodie.png";
 import { AiFillApple, AiFillAndroid } from "react-icons/ai";
 
 function Navbar() {
+  const [nav, setNav] = useState(false)
+
   return (
     <div className="bg-hero-background bg-cover h-screen bg-center font-Mulish relative">
       <div className="w-[95%] mx-auto">
@@ -12,7 +14,8 @@ function Navbar() {
         <nav className="w-full flex justify-between items-center py-7">
           <div className="flex desktop:gap-8 mobile:gap-5 items-center">
             <div>
-              <TfiMenu className="desktop:text-[1.3rem]" />
+              <TfiMenu onClick={ () => setNav(!nav)}
+              className="desktop:text-[1.3rem]" />
             </div>
             <div className="desktop:text-3xl mobile:text-xl gap-[.3rem] font-semi-bolded flex">
               Foodie<span className="font-extra-bolded">Eats</span>
@@ -40,9 +43,10 @@ function Navbar() {
           </div>
         </nav>
 
-        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+      <div onClick={() => setNav(!nav)}
+      className={nav ? "bg-black/80 fixed w-full h-screen z-10 top-0 left-0" : "hidden"}></div>
 
-        <div className="bg-white fixed w-[300px] h-screen z-10 top-0 left-0 p-6 flex flex-col justify-between">
+      <div className={ nav ? "bg-white fixed w-[300px] h-screen z-10 top-0 left-0 p-6 flex flex-col justify-between" : "hidden"}>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <div>
