@@ -15,7 +15,7 @@ function Navbar() {
           <div className="flex desktop:gap-8 mobile:gap-5 items-center">
             <div>
               <TfiMenu onClick={ () => setNav(!nav)}
-              className="desktop:text-[1.3rem]" />
+              className="desktop:text-[1.3rem] cursor-pointer "/>
             </div>
             <div className="desktop:text-3xl mobile:text-xl gap-[.3rem] font-semi-bolded flex">
               Foodie<span className="font-extra-bolded">Eats</span>
@@ -46,7 +46,7 @@ function Navbar() {
       <div onClick={() => setNav(!nav)}
       className={nav ? "bg-black/80 fixed w-full h-screen z-10 top-0 left-0" : "hidden"}></div>
 
-      <div className={ nav ? "bg-white fixed w-[300px] h-screen z-10 top-0 left-0 p-6 flex flex-col justify-between" : "hidden"}>
+      <div className={ `bg-white fixed w-[300px] h-screen z-10 top-0 left-0 p-6 flex flex-col justify-between ease-in-out duration-500 ${ nav ? "translate-x-0 " : "-translate-x-full"}`}>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <div>
