@@ -1,41 +1,41 @@
 import React, { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { FaUser } from "react-icons/fa";
-import logo from "./assets/foodie.png";
+import logo from "../assets/foodie.png";
 import { AiFillApple, AiFillAndroid } from "react-icons/ai";
 
 function Navbar() {
   const [nav, setNav] = useState(false)
 
   return (
-    <div className="bg-hero-background bg-cover h-screen bg-center font-Mulish relative">
+    <div className="bg-hero-background bg-cover h-screen bg-center font-Mulish">
       <div className="w-[95%] mx-auto">
         {/* Navbar */}
         <nav className="w-full flex justify-between items-center py-7">
-          <div className="flex desktop:gap-8 mobile:gap-5 items-center">
+          <div className="flex md:gap-8 mobile:gap-5 items-center">
             <div>
               <TfiMenu onClick={ () => setNav(!nav)}
-              className="desktop:text-[1.3rem] cursor-pointer "/>
+              className="md:text-[1.3rem] cursor-pointer"/>
             </div>
-            <div className="desktop:text-3xl mobile:text-xl gap-[.3rem] font-semi-bolded flex">
+            <div className="md:text-3xl mobile:text-2xl gap-[.3rem] font-semi-bolded flex">
               Foodie<span className="font-extra-bolded">Eats</span>
             </div>
           </div>
 
-          <div className="flex desktop:gap-1 mobile:gap-3">
+          <div className="flex md:gap-1 mobile:gap-3">
             <div>
               <button
                 type="button"
-                className="bg-white desktop:px-3 desktop:py-3 mobile:px-2 mobile:py-2 flex items-center gap-1 rounded-3xl font-semibold"
+                className="bg-white md:px-3 md:py-3 mobile:px-2 mobile:py-2 flex items-center gap-1 rounded-3xl font-semibold"
               >
-                <FaUser className="desktop:text-xl" />{" "}
-                <span className="desktop:block mobile:hidden ">Log In</span>
+                <FaUser className="md:text-xl" />{" "}
+                <span className="md:block mobile:hidden ">Log In</span>
               </button>
             </div>
             <div>
               <button
                 type="button"
-                className="bg-black desktop:text-base desktop:px-3 desktop:py-3 mobile:px-2 mobile:py-2 mobile:text-xs flex items-center rounded-3xl text-white font-semibold"
+                className="bg-black md:text-base md:px-3 md:py-3 mobile:px-2 mobile:py-2 mobile:text-xs flex items-center rounded-3xl text-white font-semibold"
               >
                 Sign up
               </button>
@@ -91,24 +91,6 @@ function Navbar() {
             </div>
           </div>
         </div>
-
-        {/* hero */}
-        {/* <div className="bg-blue-600 flex items-center absolute bottom-0 top-0">
-            <div>
-              <div>
-                <h1>Order food to your door</h1>
-              </div>
-              <div>
-                <div>
-                  <input type="text"></input>
-                </div>
-                <div>dropdow</div>
-                <div>
-                  <button>Find Food</button>
-                </div>
-              </div>
-            </div>
-          </div> */}
       </div>
     </div>
   );

@@ -7,17 +7,16 @@ module.exports = {
         "hero-background": "url('./assets/Food.png')",
       },
       fontFamily: {
-      Mulish: ["Mulish"],
+        Mulish: ["Mulish"],
       },
       screens: {
-      'mobile': '375px',
-      'desktop': '768px'
+        mobile: "375px",
+        desktop: "768px",
+      },
+      fontWeight: {
+        "extra-bolded": "1000",
+      },
     },
-    fontWeight: {
-      'extra-bolded': '1000',
-    }
-    },
-    
   },
   plugins: [],
 };
