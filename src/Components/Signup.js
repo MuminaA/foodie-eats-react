@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { AiFillApple, AiFillFacebook } from "react-icons/ai";
 
 function Signup() {
+    const [valid, setValid] = useState('');
+    // const [phone, setPhone] = useState('');
+
+    const [error, setError] = useState('');
+
+    const handleChange = (e) => {
+        setValid(e.target.value);
+    }
+
+    const handleClick = () => {
+        const regex = /^(?:\d{10}|\w+@\w+\.\w{2,3})$/;
+        // const emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        // const phoneRegex = /^\+?[1-9][0-9]{7,14}$/;
+
+        if (!regex.test(valid)) {
+            setError('Please enter a phone number or email')
+        } else {
+            setError('')
+        }
+    }
+
   return (
     <div>
       <nav className="bg-black w-full h-[64px] text-white flex items-center md:px-16 mobile:px-8 font-Mulish">
@@ -21,10 +42,13 @@ function Signup() {
               <input
                 placeholder="Enter phone number or email"
                 className="py-3 pl-4 bg-zinc-200 w-full rounded-lg placeholder:text-lg placeholder:text-zinc-500"
+                onChange={handleChange}
               ></input>
+              <p id="emil-error" className="text-red-600 text-sm pt-2">{error}</p>
             </div>
             <div className="">
-              <button className="bg-black text-white w-full p-3 rounded-lg">
+              <button className="bg-black text-white w-full p-3 rounded-lg"
+              onClick={handleClick}>
                 Continue
               </button>
             </div>
