@@ -1,7 +1,7 @@
 import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import { RiTimeFill } from "react-icons/ri";
-import {GrFormSchedule} from "react-icons/gr";
+import { GrFormSchedule } from "react-icons/gr";
 
 function Hero() {
   return (
@@ -23,7 +23,7 @@ function Hero() {
               ></input>
             </div>
             <div>
-              <select className="py-4 md:pl-4 mobile:pl-4 mobile:pr-[12.1rem] outline-none">
+              <select className="py-4 md:pl-4 md:pr-4 mobile:pl-4 mobile:pr-[12.1rem] outline-none">
                 <option value="">
                   <RiTimeFill size={30}/>
                   Deliver now
@@ -34,12 +34,17 @@ function Hero() {
               </select>
             </div>
             <div>
-              <button className="bg-black text-white md:py-4 md:px-5 rounded-lg font-semibold mobile:py-3 px-[142px] whitespace-nowrap">Find Food</button>
+              <button className="bg-black text-white md:py-4 md:px-5 rounded-lg font-semibold mobile:py-3 px-[142px] whitespace-nowrap">
+                Find Food
+              </button>
             </div>
           </div>
           <div>
             <p className="font-medium text-sm">
-              <a href='#' className="underline">Sign In</a> for your recent addresses
+              <a href="#" className="underline">
+                Sign In
+              </a>{" "}
+              for your recent addresses
             </p>
           </div>
         </div>
