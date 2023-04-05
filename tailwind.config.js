@@ -20,6 +20,9 @@ module.exports = {
         // Simple 8 row grid
         '8': 'repeat(8, minmax(0, 1fr))',
         '15': 'repeat(15, minmax(0, 1fr))',
+      },
+      flex: {
+        '2': '2 2 0%'
       }
     },
   },
