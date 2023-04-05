@@ -34,7 +34,7 @@ function Hero() {
               </select>
             </div>
             <div>
-              <button className="bg-black text-white md:py-4 md:px-5 rounded-lg font-semibold mobile:py-3 px-[142px] whitespace-nowrap">
+              <button className="bg-black text-white md:py-4 md:px-5 rounded-lg font-semibold mobile:py-3 px-[142px] whitespace-nowrap hover:bg-[#424649]">
                 Find Food
               </button>
             </div>

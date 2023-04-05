@@ -1,20 +1,21 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Headline from "./Components/Headline";
-import Cities from "./Components/Cities";
-import Countries from "./Components/Countries";
-import Footer from "./Components/Footer";
+import Home from "./Components/Home";
+import Signup from "./Components/Signup";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 function App() {
+  // const navigate = useNavigate();
+
+  // const navigateToSignup = () => {
+  //   navigate('/Signup');
+  // };
+
   return (
     <div>
-    <Navbar />
-    <Hero />
-    <Headline />
-    <Cities />
-    <Countries />
-    <Footer />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
     </div>
   );
 }
