@@ -23,7 +23,12 @@ module.exports = {
       },
       flex: {
         '2': '2 2 0%'
-      }
+      },
+      boxShadow: {
+        '3xl': '0 -2px 0 inset rgb(226, 226, 226)',
+        '4xl': '0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04)'
+      },
+      overflow: ['hover', 'focus', 'group-hover'],
     },
   },
   plugins: [],

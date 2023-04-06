@@ -5,6 +5,7 @@ import { GrFormSchedule } from "react-icons/gr";
 
 function Hero() {
   return (
+    <div className="bg-hero-background bg-cover h-screen bg-center">
     <div className="w-[95%] mx-auto">
       <div className="flex items-center absolute md:top-1/2 mobile:top-[30%] transform -translate-y-1/2 w-[95%]">
         <div className="flex flex-col md:gap-7 mobile:gap-4">
@@ -49,6 +50,7 @@ function Hero() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

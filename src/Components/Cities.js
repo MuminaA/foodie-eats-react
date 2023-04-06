@@ -14,30 +14,30 @@ function Cities() {
         <img src={map2} alt='' className="md:hidden mobile:block"></img>
       </div>
       <div className="grid grid-rows-6 md:grid-cols-4 md:gap-6 mobile:grid-cols-2 mobile:gap-3 grid-flow-col md:mb-24 mobile:mb-3">
-          <div className="md:block mobile:hidden"><a>Akron</a></div>
-          <div><a>Albuquerque</a></div>
-          <div className="md:block mobile:hidden"><a>Bridgeport</a></div>
-          <div><a>Concord</a></div>
-          <div className="md:block mobile:hidden"><a>Dayton</a></div>
-          <div className="md:block mobile:hidden"><a>El Paso</a></div>
-          <div className="md:block mobile:hidden"><a>Hartford</a></div>
-          <div><a>Houston</a></div>
-          <div><a>Indianapolis</a></div>
-          <div className="md:block mobile:hidden"><a>McAllen</a></div>
-          <div><a>Mesa</a></div>
-          <div><a>Milwaukee</a></div>
-          <div><a>Nashville</a></div>
-          <div className="md:block mobile:hidden"><a>New Orleans</a></div>
-          <div><a>Oklahoma City</a></div>
-          <div className="md:block mobile:hidden"><a>Omaha</a></div>
-          <div className="md:block mobile:hidden"><a>Orlando</a></div>
-          <div className="md:block mobile:hidden"><a>Palm Bay</a></div>
-          <div><a>Providence</a></div>
-          <div><a>Queens</a></div>
-          <div className="md:block mobile:hidden"><a>San Antonio</a></div>
-          <div className="md:block mobile:hidden"><a>Stony Brook</a></div>
-          <div><a>Tucson</a></div>
-          <div><a>West Hollywood</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Akron</a></div>
+          <div><a href=''>Albuquerque</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Bridgeport</a></div>
+          <div><a href=''>Concord</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Dayton</a></div>
+          <div className="md:block mobile:hidden"><a href=''>El Paso</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Hartford</a></div>
+          <div><a href=''>Houston</a></div>
+          <div><a href=''>Indianapolis</a></div>
+          <div className="md:block mobile:hidden"><a href=''>McAllen</a></div>
+          <div><a href=''>Mesa</a></div>
+          <div><a href=''>Milwaukee</a></div>
+          <div><a href=''>Nashville</a></div>
+          <div className="md:block mobile:hidden"><a href=''>New Orleans</a></div>
+          <div><a href=''>Oklahoma City</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Omaha</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Orlando</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Palm Bay</a></div>
+          <div><a href=''>Providence</a></div>
+          <div><a href=''>Queens</a></div>
+          <div className="md:block mobile:hidden"><a href=''>San Antonio</a></div>
+          <div className="md:block mobile:hidden"><a href=''>Stony Brook</a></div>
+          <div><a href=''>Tucson</a></div>
+          <div><a href=''>West Hollywood</a></div>
       </div>
       <a href='#' className="underline font-medium md:hidden mobile:block mb-10">View all 500+ cities</a>
     </div>
