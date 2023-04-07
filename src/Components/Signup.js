@@ -4,7 +4,6 @@ import { AiFillApple, AiFillFacebook } from "react-icons/ai";
 
 function Signup() {
     const [valid, setValid] = useState('');
-    // const [phone, setPhone] = useState('');
 
     const [error, setError] = useState('');
 
@@ -14,8 +13,6 @@ function Signup() {
 
     const handleClick = () => {
         const regex = /^(?:\d{10}|\w+@\w+\.\w{2,3})$/;
-        // const emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        // const phoneRegex = /^\+?[1-9][0-9]{7,14}$/;
 
         if (!regex.test(valid)) {
             setError('Please enter a phone number or email')
@@ -85,14 +82,14 @@ function Signup() {
 
           <div>
             <p className="text-xs text-gray-500 leading-5">
-              This site is protected by reCAPTCHA and the Google{" "}
+              This site is protected by reCAPTCHA and the Google
               <a href="#" className="underline text-black">
                 Privacy Policy
-              </a>{" "}
-              and{" "}
+              </a>
+              and
               <a href="#" className="underline text-black">
                 Terms of Service
-              </a>{" "}
+              </a>
               apply.
             </p>
           </div>

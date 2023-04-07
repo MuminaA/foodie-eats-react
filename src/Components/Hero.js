@@ -48,11 +48,11 @@ function Hero() {
                 <div>
                   <button
                     type="button"
-                    className="flex items-center py-4 md:pl-4 md:pr-4 mobile:pl-4 mobile:pr-[12.1rem] outline-none bg-white text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    className="flex items-center py-4 md:pl-4 md:pr-4 mobile:pl-4 mobile:pr-[0.89rem] outline-none bg-white text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={() => setIsOpen(!isOpen)}
                   ><div className="flex items-center gap-2"><RiTimeFill size={20}/>
                     <span className="mr-2 font-semibold">Deliver now</span>
-                    <RiArrowDownSLine className="h-5 w-5" aria-hidden="true" /></div>
+                    <RiArrowDownSLine className="h-5 w-5 md:ml-0 mobile:ml-44" aria-hidden="true" /></div>
                     
                   </button>
                 </div>
@@ -91,10 +91,7 @@ function Hero() {
             </div>
             <div>
               <p className="font-medium text-sm">
-                <a href="#" className="underline">
-                  Sign In
-                </a>{" "}
-                for your recent addresses
+                <a href="#" className="underline">Sign In</a> for your recent addresses
               </p>
             </div>
           </div>
