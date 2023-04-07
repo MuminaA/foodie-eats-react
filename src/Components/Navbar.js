@@ -55,7 +55,6 @@ function Navbar() {
   }, [nav]);
 
   return (
-    // <div className="bg-hero-background bg-cover h-screen bg-center font-Mulish">
     <div className="">
       {/* Navbar */}
       <nav
@@ -181,7 +180,6 @@ function Navbar() {
         </div>
       </div>
     </div>
-    // </div>
   );
 }
 
