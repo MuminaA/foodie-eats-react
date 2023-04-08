@@ -29,7 +29,7 @@ function Hero() {
             </div>
             <div className="flex md:flex-row mobile:flex-col gap-2">
               <div
-                className={`bg-white flex items-center gap-4 py-0 px-4 border-b-2 ${
+                className={`bg-white flex items-center gap-4 px-4 border-b-2 ${
                   isInputFocused
                     ? "border-black transition duration-300 ease-out"
                     : "border-white transition duration-300 ease-in"

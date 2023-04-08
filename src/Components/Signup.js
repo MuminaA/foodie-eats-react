@@ -3,23 +3,28 @@ import { FcGoogle } from "react-icons/fc";
 import { AiFillApple, AiFillFacebook } from "react-icons/ai";
 
 function Signup() {
-    const [valid, setValid] = useState('');
+  const [valid, setValid] = useState('');
+  const [error, setError] = useState('');
 
-    const [error, setError] = useState('');
+  const handleChange = (e) => {
+      setValid(e.target.valid);
+  };
 
-    const handleChange = (e) => {
-        setValid(e.target.value);
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    if(!valid) {
+      setError("Please enter a phone number or email");
+      return;
     }
 
-    const handleClick = () => {
-        const regex = /^(?:\d{10}|\w+@\w+\.\w{2,3})$/;
+    // Do something with the entered email/phone number
+    console.log(valid);
 
-        if (!regex.test(valid)) {
-            setError('Please enter a phone number or email')
-        } else {
-            setError('')
-        }
-    }
+    // Clear input value and error message
+    setValid("");
+    setError("");
+  }
 
   return (
     <div>
@@ -30,27 +35,33 @@ function Signup() {
       </nav>
       <form className="min-h-[85vh] grid place-content-center">
         <div className="max-w-[350px] mx-auto flex flex-col justify-center gap-12 px-3">
-          
           <div className="flex flex-col gap-2">
-          <div>
-            <p className="text-[1.50rem]">What's your phone number or email?</p>
-          </div>
+            <div>
+              <p className="text-[1.50rem]">
+                What's your phone number or email?
+              </p>
+            </div>
             <div className="mb-2">
-              <input
-                placeholder="Enter phone number or email"
-                className="py-3 pl-4 bg-zinc-200 w-full rounded-lg placeholder:text-lg placeholder:text-zinc-500"
-                onChange={handleChange}
-              ></input>
-              <p id="emil-error" className="text-red-600 text-sm pt-2">{error}</p>
+                <input
+                type='text'
+                  placeholder="Enter phone number or email"
+                  className="py-3 pl-4 bg-zinc-200 w-full rounded-lg placeholder:text-lg placeholder:text-zinc-500"
+                  onChange={handleChange}
+                ></input>
+             {error && <p id="emil-error" className="text-red-600 text-sm pt-2">{error}</p>}
             </div>
             <div className="">
-              <button className="bg-black text-white w-full p-3 rounded-lg"
-              onClick={handleClick}>
+              <button
+                className="bg-black text-white w-full p-3 rounded-lg"
+                onClick={handleClick}
+              >
                 Continue
               </button>
             </div>
             <p className="w-full text-center border-b-[1px] border-[#AFAFAF] border-solid leading-[.1rem] my-[10px]">
-              <span className="bg-white p-[10px] text-[#AFAFAF] text-[13px]">or</span>
+              <span className="bg-white p-[10px] text-[#AFAFAF] text-[13px]">
+                or
+              </span>
             </p>
             <div>
               <button className="bg-zinc-200 w-full p-3 rounded-lg flex items-center gap-1 justify-center">
