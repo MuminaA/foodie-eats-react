@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/foodie-eats-react/static/css/main.040f1644.css",
-    "main.js": "/foodie-eats-react/static/js/main.c4f67bc9.js",
+    "main.js": "/foodie-eats-react/static/js/main.b1b0365a.js",
     "static/media/Food.png": "/foodie-eats-react/static/media/Food.ed6b73bcbdd66fd62e61.png",
     "static/media/map.png": "/foodie-eats-react/static/media/map.c63c89b323ff52d4c327.png",
     "static/media/Bustling-food-market.png": "/foodie-eats-react/static/media/Bustling-food-market.0164fc33a1d97d743ddd.png",
@@ -12,10 +12,10 @@
     "static/media/app-store (1).svg": "/foodie-eats-react/static/media/app-store (1).3f9ab08ae56699b0acdd1f3adb635d19.svg",
     "index.html": "/foodie-eats-react/index.html",
     "main.040f1644.css.map": "/foodie-eats-react/static/css/main.040f1644.css.map",
-    "main.c4f67bc9.js.map": "/foodie-eats-react/static/js/main.c4f67bc9.js.map"
+    "main.b1b0365a.js.map": "/foodie-eats-react/static/js/main.b1b0365a.js.map"
   },
   "entrypoints": [
     "static/css/main.040f1644.css",
-    "static/js/main.c4f67bc9.js"
+    "static/js/main.b1b0365a.js"
   ]
 }
