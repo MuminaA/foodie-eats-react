@@ -4,11 +4,6 @@ import Signup from "./Components/Signup";
 import {Routes, Route, useNavigate} from 'react-router-dom';
 
 function App() {
-  // const navigate = useNavigate();
-
-  // const navigateToSignup = () => {
-  //   navigate('/Signup');
-  // };
 
   return (
     <div>
