@@ -19,6 +19,7 @@ module.exports = {
       gridTemplateRows: {
         // Simple 8 row grid
         '8': 'repeat(8, minmax(0, 1fr))',
+        // Simple 15 row grid
         '15': 'repeat(15, minmax(0, 1fr))',
       },
       flex: {

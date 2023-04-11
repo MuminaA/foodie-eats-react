@@ -91,7 +91,8 @@ function Hero() {
             </div>
             <div>
               <p className="font-medium text-sm">
-                <a href="#" className="underline">Sign In</a> for your recent addresses
+                <a href="../signup" className="underline"
+                >Sign In</a> for your recent addresses
               </p>
             </div>
           </div>

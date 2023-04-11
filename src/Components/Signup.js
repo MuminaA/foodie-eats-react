@@ -18,9 +18,6 @@ function Signup() {
       return;
     }
 
-    // Do something with the entered email/phone number
-    console.log(valid);
-
     // Clear input value and error message
     setValid("");
     setError("");
