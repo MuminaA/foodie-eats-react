@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/foodie-eats-react/static/css/main.040f1644.css",
+    "main.js": "/foodie-eats-react/static/js/main.dfb9e0e7.js",
+    "static/media/Food.png": "/foodie-eats-react/static/media/Food.ed6b73bcbdd66fd62e61.png",
+    "static/media/map.png": "/foodie-eats-react/static/media/map.c63c89b323ff52d4c327.png",
+    "static/media/Bustling-food-market.png": "/foodie-eats-react/static/media/Bustling-food-market.0164fc33a1d97d743ddd.png",
+    "static/media/cook.png": "/foodie-eats-react/static/media/cook.501d4faab1c67cd12571.png",
+    "static/media/map2.jpg": "/foodie-eats-react/static/media/map2.c1d104513ca518025147.jpg",
+    "static/media/delivery.png": "/foodie-eats-react/static/media/delivery.99b648b62e596715bb9b.png",
+    "static/media/foodie.png": "/foodie-eats-react/static/media/foodie.07e43eec63ab3e60e5e8.png",
+    "static/media/app-store (1).svg": "/foodie-eats-react/static/media/app-store (1).3f9ab08ae56699b0acdd1f3adb635d19.svg",
+    "index.html": "/foodie-eats-react/index.html",
+    "main.040f1644.css.map": "/foodie-eats-react/static/css/main.040f1644.css.map",
+    "main.dfb9e0e7.js.map": "/foodie-eats-react/static/js/main.dfb9e0e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.040f1644.css",
+    "static/js/main.dfb9e0e7.js"
+  ]
+}
