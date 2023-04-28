@@ -6,6 +6,7 @@ import { AiFillApple, AiFillAndroid } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { HiLocationMarker } from "react-icons/hi";
 import { useMediaQuery } from "react-responsive";
+import { useCallback } from "react";
 
 function Navbar() {
   // change navbar color after scroll
@@ -27,7 +28,7 @@ function Navbar() {
   // delivery input on navbar
   const [input, setInput] = useState(false);
 
-  const changeNav = () => {
+  const changeNav = useCallback(() => {
     if (
       (!isMobile && window.scrollY >= 470) ||
       (isMobile && window.scrollY >= 180)
@@ -36,12 +37,12 @@ function Navbar() {
     } else {
       setInput(false);
     }
-  };
+  }, [isMobile]);
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
     return () => window.removeEventListener("scroll", changeNav);
-  }, []);
+  }, [changeNav]);
 
   // setting route navigation
   const [nav, setNav] = useState(false);
@@ -81,14 +82,6 @@ function Navbar() {
   }, [isMobile]);
 
   const [isInputFocused, setIsInputFocused] = useState(false);
-
-  const handleInputFocus = () => {
-    setIsInputFocused(true);
-  };
-
-  const handleInputBlur = () => {
-    setIsInputFocused(false);
-  };
 
   return (
     <div className="">
@@ -197,15 +190,15 @@ function Navbar() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col gap-3 font-bold text-sm text-gray-700">
+          <div className="flex flex-col gap-3 font-bold text-sm text-gray-700 cursor-pointer">
             <p>
-              <a href="#">Create a business account</a>
+              Create a business account
             </p>
             <p>
-              <a href="#">Add your restaurant</a>
+              Add your restaurant
             </p>
             <p>
-              <a href="#">Sign up to deliver</a>
+              Sign up to deliver
             </p>
           </div>
         </div>

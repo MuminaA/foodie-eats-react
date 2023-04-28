@@ -3,17 +3,17 @@ import { FcGoogle } from "react-icons/fc";
 import { AiFillApple, AiFillFacebook } from "react-icons/ai";
 
 function Signup() {
-  const [valid, setValid] = useState('');
-  const [error, setError] = useState('');
+  const [valid, setValid] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
-      setValid(e.target.valid);
+    setValid(e.target.valid);
   };
 
   const handleClick = (e) => {
     e.preventDefault();
 
-    if(!valid) {
+    if (!valid) {
       setError("Please enter a phone number or email");
       return;
     }
@@ -21,7 +21,7 @@ function Signup() {
     // Clear input value and error message
     setValid("");
     setError("");
-  }
+  };
 
   return (
     <div>
@@ -39,13 +39,17 @@ function Signup() {
               </p>
             </div>
             <div className="mb-2">
-                <input
-                type='text'
-                  placeholder="Enter phone number or email"
-                  className="py-3 pl-4 bg-zinc-200 w-full rounded-lg placeholder:text-lg placeholder:text-zinc-500"
-                  onChange={handleChange}
-                ></input>
-             {error && <p id="emil-error" className="text-red-600 text-sm pt-2">{error}</p>}
+              <input
+                type="text"
+                placeholder="Enter phone number or email"
+                className="py-3 pl-4 bg-zinc-200 w-full rounded-lg placeholder:text-lg placeholder:text-zinc-500"
+                onChange={handleChange}
+              ></input>
+              {error && (
+                <p id="emil-error" className="text-red-600 text-sm pt-2">
+                  {error}
+                </p>
+              )}
             </div>
             <div className="">
               <button
@@ -90,14 +94,9 @@ function Signup() {
 
           <div>
             <p className="text-xs text-gray-500 leading-5">
-              This site is protected by reCAPTCHA and the Google
-              <a href="#" className="underline text-black">
-                Privacy Policy
-              </a>
-              and
-              <a href="#" className="underline text-black">
-                Terms of Service
-              </a>
+              This site is protected by reCAPTCHA and the Google{" "}
+              <span className="underline text-black">Privacy Policy</span> and{" "}
+              <span className="underline text-black">Terms of Service</span>{" "}
               apply.
             </p>
           </div>

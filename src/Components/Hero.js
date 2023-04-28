@@ -7,14 +7,6 @@ import { RiArrowDownSLine } from "react-icons/ri";
 function Hero() {
   const [isInputFocused, setIsInputFocused] = useState(false);
 
-  const handleInputFocus = () => {
-    setIsInputFocused(true);
-  };
-
-  const handleInputBlur = () => {
-    setIsInputFocused(false);
-  };
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (

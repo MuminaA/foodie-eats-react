@@ -9,17 +9,17 @@ function Headline() {
       <div className="flex flex-col gap-2">
         <img src={employees} alt='employees' className="object-cover md:h-80 w-[85rem]"></img>
         <p className="md:text-3xl mobile:text-xl font-semibold">Feed your employees</p>
-        <a href='#' className="underline font-medium mobile:text-sm">Create a business account</a>
+        <p className="underline font-medium mobile:text-sm cursor-pointer">Create a business account</p>
       </div>
       <div className="flex flex-col gap-2">
         <img src={cook} alt='cooker' className="object-cover md:h-80 w-[85rem]"></img>
         <p className="md:text-3xl mobile:text-xl font-semibold">Your restaurant, delivered</p>
-        <a href='#' className="underline font-medium mobile:text-sm">Add your restaurant</a>
+        <p className="underline font-medium mobile:text-sm cursor-pointer">Add your restaurant</p>
       </div>
       <div className="flex flex-col gap-2">
         <img src={delivery} alt='deliver' className="object-cover md:h-80 w-[85rem]"></img>
         <p className="md:text-3xl mobile:text-xl font-semibold">Deliver with Uber Eats</p>
-        <a href='#' className="underline font-medium mobile:text-sm">Sign up to deliver</a>
+        <p className="underline font-medium mobile:text-sm cursor-pointer">Sign up to deliver</p>
       </div>
     </div>
   );

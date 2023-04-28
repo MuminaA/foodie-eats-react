@@ -18,8 +18,8 @@ function Footer() {
             Foodie <span className="font-bold">Eats</span>
           </p>
           <div className="flex gap-4">
-            <a href=''><img src={apple} alt="apple store" className="w-[135px]"></img></a>
-            <a href=''><img src={google} alt="google play" className="w-[135px]"></img></a>
+            <img src={apple} alt="apple store" className="w-[135px] cursor-pointer"></img>
+            <img src={google} alt="google play" className="w-[135px] cursor-pointer"></img>
           </div>
         </div>
         <div className="list-none flex-1">
@@ -63,49 +63,49 @@ function Footer() {
         <div className="flex md:flex-row mobile:flex-col mobile:gap-6 justify-between pb-3">
           <div>
             <ul className="flex gap-4">
-              <li>
-                <a href=''>
+              <li className="cursor-pointer">
+                
                   <AiFillFacebook size={20} />
-                </a>
+                
               </li>
-              <li>
-                <a href=''>
+              <li className="cursor-pointer">
+                
                   <AiOutlineTwitter size={20} />
-                </a>
+                
               </li>
-              <li>
-                <a href=''>
+              <li className="cursor-pointer">
+                
                   <AiOutlineInstagram size={20} />
-                </a>
+                
               </li>
             </ul>
           </div>
           <div className="flex md:flex-row mobile:flex-col md:gap-9 mobile:gap-4 text-[.9rem]">
-            <a href="" className="hover:underline cursor-pointer">
+            <p className="hover:underline cursor-pointer">
               Privacy Policy
-            </a>
-            <a href="" className="hover:underline cursor-pointer">
+            </p>
+            <p className="hover:underline cursor-pointer">
               Terms
-            </a>
-            <a href="" className="hover:underline cursor-pointer">
+            </p>
+            <p className="hover:underline cursor-pointer">
               Pricing
-            </a>
-            <a href="" className="hover:underline cursor-pointer">
+            </p>
+            <p className="hover:underline cursor-pointer">
               Do not sell or share my personal information
-            </a>
+            </p>
           </div>
         </div>
         <div className="flex md:flex-row mobile:flex-col justify-end md:gap-9 mobile:gap-4 text-[.9rem]">
           <p>
             This is a protected by reCAPTCHA and the{" "}
-            <a href="" className="hover:underline cursor-pointer">
+            <span className="hover:underline cursor-pointer">
               Google Privacy Policy
-            </a>{" "}
+            </span>{" "}
             and{" "}
-            <a href="" className="hover:underline cursor-pointer">
+            <span className="hover:underline cursor-pointer">
               Terms of Service
-              <a /> apply
-            </a>
+            </span>{" "}
+            apply
           </p>
           <p>&copy;2023 Foodie Technologies Inc.</p>
         </div>

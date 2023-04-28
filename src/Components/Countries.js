@@ -7,105 +7,104 @@ function Countries() {
         <h2 className="md:text-4xl mobile:text-2xl font-semibold">
           Countries with Foodie Eats
         </h2>
-        <a href="#" className="underline font-medium md:block mobile:hidden">
+        <p className="underline font-medium md:block mobile:hidden cursor-pointer">
           View all countries
-        </a>
+        </p>
       </div>
       <div className="grid md:grid-rows-8 md:grid-cols-4 md:gap-6 mobile:grid-rows-15 mobile:grid-cols-2 mobile:gap-3 grid-flow-col md:mb-24 mobile:mb-3">
         <div>
-          <a href=''>Australia</a>
+          <p className="cursor-pointer">Australia</p>
         </div>
         <div>
-          <a href=''>Belgium</a>
+          <p className="cursor-pointer">Belgium</p>
         </div>
         <div>
-          <a href=''>Canada</a>
+          <p className="cursor-pointer">Canada</p>
         </div>
         <div>
-          <a href=''>Chile</a>
+          <p className="cursor-pointer">Chile</p>
         </div>
         <div>
-          <a href=''>Costa Rica</a>
+          <p className="cursor-pointer">Costa Rica</p>
         </div>
         <div>
-          <a href=''>Dominican Republic</a>
+          <p className="cursor-pointer">Dominican Republic</p>
         </div>
         <div>
-          <a href=''>Ecuador</a>
+          <p className="cursor-pointer">Ecuador</p>
         </div>
         <div>
-          <a href=''>El Salvador</a>
+          <p className="cursor-pointer">El Salvador</p>
         </div>
         <div>
-          <a href=''>France</a>
+          <p className="cursor-pointer">France</p>
         </div>
         <div>
-          <a href=''>Germany</a>
+          <p className="cursor-pointer">Germany</p>
         </div>
         <div>
-          <a href=''>Guatamala</a>
+          <p className="cursor-pointer">Guatamala</p>
         </div>
         <div>
-          <a href=''>Ireland</a>
+          <p className="cursor-pointer">Ireland</p>
         </div>
         <div>
-          <a href=''>Italy</a>
+          <p className="cursor-pointer">Italy</p>
         </div>
         <div>
-          <a href=''>Japan</a>
+          <p className="cursor-pointer">Japan</p>
         </div>
         <div>
-          <a href=''>Kenya</a>
+          <p className="cursor-pointer">Kenya</p>
         </div>
         <div>
-          <a href=''>Mexico</a>
+          <p className="cursor-pointer">Mexico</p>
         </div>
         <div>
-          <a href=''>Netherlands</a>
+          <p className="cursor-pointer">Netherlands</p>
         </div>
         <div>
-          <a href=''>New Zealand</a>
+          <p className="cursor-pointer">New Zealand</p>
         </div>
         <div>
-          <a href=''>Panama</a>
+          <p className="cursor-pointer">Panama</p>
         </div>
         <div>
-          <a href=''>Poland</a>
+          <p className="cursor-pointer">Poland</p>
         </div>
         <div>
-          <a href=''>Portugal</a>
+          <p className="cursor-pointer">Portugal</p>
         </div>
         <div>
-          <a href=''>South Africa</a>
+          <p className="cursor-pointer">South Africa</p>
         </div>
         <div>
-          <a href=''>Spain</a>
+          <p className="cursor-pointer">Spain</p>
         </div>
         <div>
-          <a href=''>Sri Lanka</a>
+          <p className="cursor-pointer">Sri Lanka</p>
         </div>
         <div>
-          <a href=''>Swedan</a>
+          <p className="cursor-pointer">Swedan</p>
         </div>
         <div>
-          <a href=''>Switzerland</a>
+          <p className="cursor-pointer">Switzerland</p>
         </div>
         <div>
-          <a href=''>Taiwan(ROC)</a>
+          <p className="cursor-pointer">Taiwan(ROC)</p>
         </div>
         <div>
-          <a href=''>United Kingdom</a>
+          <p className="cursor-pointer">United Kingdom</p>
         </div>
         <div>
-          <a href=''>Unites Sates</a>
+          <p className="cursor-pointer">Unites Sates</p>
         </div>
       </div>
-      <a
-        href="#"
-        className="underline font-medium md:hidden mobile:block mb-10"
+      <p
+        className="underline font-medium md:hidden mobile:block mb-10 cursor-pointer"
       >
         View all countries
-      </a>
+      </p>
     </div>
   );
 }
